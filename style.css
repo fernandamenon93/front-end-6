@@ -1,0 +1,117 @@
+/* Variáveis (transformadas em constantes) */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --font-stack: 'Arial', sans-serif;
+    --book-card-bg: #fff;
+    --book-card-border: #ccc;
+}
+
+/* Estilização global */
+body {
+    font-family: var(--font-stack);
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.books__header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.books__header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.books__header .menu {
+    margin: 15px 0;
+}
+
+.books__header .menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.books__header .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+.about, .books, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.about h2, .books h2, .contact h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about p, .contact p {
+    color: var(--text-color);
+}
+
+/* Listagem de livros */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    background: var(--book-card-bg);
+    border: 1px solid var(--book-card-border);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book h3 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book p {
+    font-size: 0.9em;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+/* Estilo de botão */
+.book .buy-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.book .buy-button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+/* Exemplo de iteração com classes específicas (se necessário) */
+/* Aqui você pode adicionar estilos específicos para os livros, se necessário */
